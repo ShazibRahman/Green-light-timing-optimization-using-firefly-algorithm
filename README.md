@@ -1,4 +1,4 @@
-# Firefly Algorithm in Python
+
 
 # Project Title - optimization of green signal timings of traffic light controllers using firefly algorithms
 
