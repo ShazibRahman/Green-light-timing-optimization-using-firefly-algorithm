@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 data=pd.read_csv('data.csv',index_col=0).values
 
-# print(data[0])
+
 class FireflyAlgorithm():
 
     def __init__(self, D, NP, nFES, alpha, betamin, gamma, LB, UB, function):
@@ -35,7 +35,7 @@ class FireflyAlgorithm():
                 self.Fireflies[i][j] = random.uniform(
                     0, 1) * (self.UB - self.LB) + self.LB
             self.Fitness[i]=data[i][0]*.1+data[i][1]*.09+data[i][2]*.08+data[i][3]*.06+data[i][4]*.05+data[i][5]*.03+data[i][5]*.01
-            
+
             self.I[i] = self.Fitness[i]
 
     def alpha_new(self, a):
@@ -59,8 +59,7 @@ class FireflyAlgorithm():
                     z = self.Index[i]  # exchange indexes
                     self.Index[i] = self.Index[j]
                     self.Index[j] = z
-        self.bestI=np.argmax(self.I)
-        self.nbest=self.Fireflies[self.bestI]
+
 
 
     def replace_ffa(self):  # replace the old population according to the new Index values
@@ -103,7 +102,7 @@ class FireflyAlgorithm():
 
     def Run(self):
         self.init_ffa()
-        
+
         while self.evaluations < self.nFES:
 
             # optional reducing of alpha
@@ -121,7 +120,10 @@ class FireflyAlgorithm():
             self.replace_ffa()
             # find the current best
             self.fbest = self.I[0]
+            self.bestI=np.argmax(self.I)
+            self.nbest=self.Fireflies[self.bestI]
+
             # move all fireflies to the better locations
             self.move_ffa()
-        
-        return self.fbest , self.nbest
+
+        return self.fbest , self.nbest , self.bestI
