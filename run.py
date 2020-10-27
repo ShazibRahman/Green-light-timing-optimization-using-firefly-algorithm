@@ -13,7 +13,7 @@ def generate(df):
     no_of_lane=prob_dim
     for i in range(pop_size):
         for j in range(no_of_lane):
-            data_set[i][j]=((df[j][0]*df[j][1])//df[j][2])*np.random.rand()
+            data_set[i][j]=((df[j][0]*df[j][1])//df[j][2])
             # print(data_set[i][j])
     return data_set
     
@@ -31,7 +31,7 @@ def function(D, sol):
 
 
 
-Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,120, 180, function,data_set)
+Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,30, 180, function,data_set)
 Best = Algorithm.Run()
 
 print ('best solution is',Best[0], 'and time gained',round(Best[1]),'mins')

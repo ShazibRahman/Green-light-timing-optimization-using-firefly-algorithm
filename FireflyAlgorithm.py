@@ -33,7 +33,7 @@ class FireflyAlgorithm():
         for i in range(self.NP):
             for j in range(self.D):
                 self.Fireflies[i][j] = random.uniform(
-                    0, 1) * (self.UB - self.LB) + self.LB
+                    self.LB, self.LB) +self.Fireflies[i][j]
             self.Fitness[i]=1
 
             self.I[i] = self.Fitness[i]
