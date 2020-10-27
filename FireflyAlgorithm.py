@@ -9,7 +9,7 @@ class FireflyAlgorithm():
 
     def __init__(self, D, NP, nFES, alpha, betamin, gamma, LB, UB, function,data_set):
         self.D = D  # dimension of the problem
-        self.NP = NP  # population size 
+        self.NP = NP  # population size
         self.nFES = nFES  # number of function evaluations
         self.alpha = alpha  # alpha parameter
         self.betamin = betamin  # beta parameter
@@ -33,7 +33,7 @@ class FireflyAlgorithm():
         for i in range(self.NP):
             for j in range(self.D):
                 self.Fireflies[i][j] = random.uniform(
-                    self.LB, self.LB) +self.Fireflies[i][j]
+                    self.LB, self.UB) +self.Fireflies[i][j]
             self.Fitness[i]=1
 
             self.I[i] = self.Fitness[i]
@@ -129,6 +129,6 @@ class FireflyAlgorithm():
             for i in self.nbest:
                 self.time_gain=self.time_gain+((self.UB+self.LB)//2-i)
             # print(self.delay)
-            
+
 
         return  self.nbest, self.time_gain
