@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np
-df=np.random.randint(100,999,(7,6))
+df=np.random.randint(100,999,(10,6))
 
 df=pd.DataFrame(df)
 

@@ -9,7 +9,7 @@ class FireflyAlgorithm():
 
     def __init__(self, D, NP, nFES, alpha, betamin, gamma, LB, UB, function):
         self.D = D  # dimension of the problem
-        self.NP = NP  # population size
+        self.NP = NP  # population size 
         self.nFES = nFES  # number of function evaluations
         self.alpha = alpha  # alpha parameter
         self.betamin = betamin  # beta parameter
@@ -28,6 +28,7 @@ class FireflyAlgorithm():
         self.fbest = None  # the best
         self.evaluations = 0
         self.Fun = function
+        self.time_gain=0
 
     def init_ffa(self):
         for i in range(self.NP):
@@ -125,5 +126,10 @@ class FireflyAlgorithm():
 
             # move all fireflies to the better locations
             self.move_ffa()
+            self.time_gain=0
+            for i in self.nbest:
+                self.time_gain=self.time_gain+((self.UB+self.LB)//2-i)
+            # print(self.delay)
+            
 
-        return self.fbest , self.nbest , self.bestI
+        return  self.nbest, self.time_gain
