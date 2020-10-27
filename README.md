@@ -73,6 +73,7 @@ where _D_ is the dimension of an optimization problem.
 Indeed, the larger the distance r<sub>ij</sub> is , the less the light fireflies can see from each other .Accordingly, it is necessary to define monotonically decreasing functions for the light intensity and attractiveness , respectively. they are presented in Eqs (2) and (3).<br>
 
 ![logo2](https://github.com/shazx06/DataSets/blob/master/2.jpg)     
+
 (2)<br>
 Where _I_<sub>o</sub> is initial light intensity, and _Y_ is the light absorption coefficient, which controls the decrease of light intensity. Accordingly, the attractiveness _B_ of a firefly is defined as shown in EQ (3)<br>
 ![image3](https://github.com/shazx06/DataSets/blob/master/3.jpg)   (3)<br>
