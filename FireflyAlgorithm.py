@@ -2,24 +2,23 @@ import random
 import math
 import numpy as np
 import pandas as pd
-data=pd.read_csv('data.csv',index_col=0).values
+
 
 
 class FireflyAlgorithm():
 
-    def __init__(self, D, NP, nFES, alpha, betamin, gamma, LB, UB, function):
+    def __init__(self, D, NP, nFES, alpha, betamin, gamma, LB, UB, function,data_set):
         self.D = D  # dimension of the problem
         self.NP = NP  # population size 
         self.nFES = nFES  # number of function evaluations
         self.alpha = alpha  # alpha parameter
         self.betamin = betamin  # beta parameter
         self.gamma = gamma  # gamma parameter
+        self.data_set=data_set
         # sort of fireflies according to fitness value
         self.Index = [0] * self.NP
-        self.Fireflies = [[0 for i in range(self.D)]
-                          for j in range(self.NP)]  # firefly agents
-        self.Fireflies_tmp = [[0 for i in range(self.D)] for j in range(
-            self.NP)]  # intermediate pop
+        self.Fireflies = self.data_set.copy()# firefly agents
+        self.Fireflies_tmp =self.data_set.copy()  # intermediate pop
         self.Fitness = [0.0] * self.NP  # fitness values
         self.I = [0.0] * self.NP  # light intensity
         self.nbest = [0.0] * self.NP  # the best solution found so far
@@ -35,7 +34,7 @@ class FireflyAlgorithm():
             for j in range(self.D):
                 self.Fireflies[i][j] = random.uniform(
                     0, 1) * (self.UB - self.LB) + self.LB
-            self.Fitness[i]=data[i][0]*.1+data[i][1]*.09+data[i][2]*.08+data[i][3]*.06+data[i][4]*.05+data[i][5]*.03+data[i][5]*.01
+            self.Fitness[i]=1
 
             self.I[i] = self.Fitness[i]
 
