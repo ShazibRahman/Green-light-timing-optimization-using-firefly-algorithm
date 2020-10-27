@@ -125,10 +125,7 @@ class FireflyAlgorithm():
 
             # move all fireflies to the better locations
             self.move_ffa()
-            self.time_gain=0
-            for i in self.nbest:
-                self.time_gain=self.time_gain+((self.UB+self.LB)//2-i)
-            # print(self.delay)
 
 
-        return  self.nbest, self.time_gain
+
+        return  self.nbest, self.fbest

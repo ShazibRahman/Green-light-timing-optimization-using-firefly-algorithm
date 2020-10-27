@@ -1,5 +1,5 @@
 from FireflyAlgorithm import *
-import pandas as pd 
+import pandas as pd
 import numpy as np
 df=np.random.randint(30,100,(10,3))
 df=pd.DataFrame(df,columns=['no_of_vehicle','avg_speed','avg_distance_btw_them'])
@@ -16,9 +16,9 @@ def generate(df):
             data_set[i][j]=((df[j][0]*df[j][1])//df[j][2])
             # print(data_set[i][j])
     return data_set
-    
 
-data_set=generate(df)  
+
+data_set=generate(df)
 # print(data_set)
 
 
@@ -31,7 +31,7 @@ def function(D, sol):
 
 
 
-Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,30, 180, function,data_set)
+Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,60, 180, function,data_set)
 Best = Algorithm.Run()
 
-print ('best solution is',Best[0], 'and time gained',round(Best[1]),'mins')
+print ('best solution is ',Best[0],'and best fiteness ',Best[1])
