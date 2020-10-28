@@ -36,7 +36,7 @@ The Infrared Sensors mounted on road to detect above explained parameters. The p
 <br>
 
 
-
+```
     Begin
      1.Objective function: f ( x ) , x = ( x 1 , x 2 , . . . , x d ));
      2.Generate an initial population of fireflies x i ( i = 1 , 2 , … , n ) ;.
@@ -57,7 +57,9 @@ The Infrared Sensors mounted on road to detect above explained parameters. The p
 
     Post-processing the results and visualization;
 
-end
+ end
+```
+
 <br>
 **Firefly algorithm**
 Firefly algorithm (FA) is a simple yet quite efficient nature-inspired search technique for global optimization. Since FA was developed, it has attracted a lot of attentions and becomes more popular in solving various real-world problems. FA is a swarm-based intelligence algorithm, which mimics the flashing behavior of fireflies . A firefly flashes as a signal to attract others for some purposes, e.g. predation or mating. Accordingly, this biological phenomenon is formulated as a meta-heuristic algorithm depending on following three rules :
@@ -117,17 +119,11 @@ Fireflies tend to move close to each other after every Generation and hence give
 
 
 
-
-
-
-
-
-
-
 ## 4. Conclusion
 The optimization of city traffic scenario is an important issue to be considered. Hence modern techniques of traffic management contribute to optimization of traffic problem. The dynamic traffic signal controller is introduced in this project having specific functions along with hardware interface. The first part is designing of program which consists of data collection, sorting  and therefore automatic evaluation of signal time. After that the second part is optimizong algortihm which is designed to provide traffic alerts for road users and take measures to avoid delay. So problems such as wastage of fuel, emergency case could be overcome through this proposed system. This system aims at saving a large amount of waiting hours caused by traffic deadlocks, where control can save time and property.
 
 <br>
+
 ## Reference Papers:
 
 I. Fister Jr.,  X.-S. Yang,  I. Fister, J. Brest. [Memetic firefly algorithm for combinatorial optimization](http://www.iztok-jr-fister.eu/static/publications/44.pdf) in Bioinspired Optimization Methods and their Applications (BIOMA 2012), B. Filipic and J.Silc, Eds.
