@@ -62,7 +62,8 @@ The Infrared Sensors mounted on road to detect above explained parameters. The p
 
 
 <br>
-**Firefly algorithm**
+
+_**Firefly algorithm**_<br>
 Firefly algorithm (FA) is a simple yet quite efficient nature-inspired search technique for global optimization. Since FA was developed, it has attracted a lot of attentions and becomes more popular in solving various real-world problems. FA is a swarm-based intelligence algorithm, which mimics the flashing behavior of fireflies . A firefly flashes as a signal to attract others for some purposes, e.g. predation or mating. Accordingly, this biological phenomenon is formulated as a meta-heuristic algorithm depending on following three rules :
   - All fireflies are attracted by each other without respect to their sex;
   - Attractiveness is proportional to its brightness, that is, the less bright one will move towards the brighter one;
@@ -112,6 +113,7 @@ Fireflies tend to move close to each other after every Generation and hence give
 
 
 **Fiteness function** used here is called sphere which is follows:
+
 <br>
 ```
 def function(D, sol):
