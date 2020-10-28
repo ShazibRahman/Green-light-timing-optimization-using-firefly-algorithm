@@ -39,3 +39,8 @@ Best = Algorithm.Run()
 # Algorithm.plot(Algorithm.nbest,Algorithm.I)
 
 print ('best solution is ',Best[0],'and best fiteness ',Best[1])
+# plt.bar([1,2,3,4,5,6,7,8,9,10],Algorithm.nbest)#2nd list is the traffic light no
+# plt.title("Graph of traffic light No and their allocated timing in minutes")
+# plt.xlabel('Traffic light no')
+# plt.ylabel('allocated time')
+# plt.show()
