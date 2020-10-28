@@ -125,8 +125,7 @@ Fireflies tend to move close to each other after every Generation and hence give
 
 
 ## 4. Conclusion
-The optimization of city traffic scenario is an important issue to be considered. Hence modern techniques of traffic management contribute to optimization of traffic problem. The dynamic traffic signal controller is introduced in this project having specific functions along with hardware interface. The first part is designing of program which consists of data collection, sorting, calculation of percentage and therefore automatic evaluation of signal time. After that the second part is web application which is designed to provide
-traffic alerts for road users and take measures to avoid congestion. So problems such as wastage of fuel, emergency case could be overcome through this proposed system. This system aims at saving a large amount of waiting hours caused by traffic deadlocks, where control can save time and property.
+The optimization of city traffic scenario is an important issue to be considered. Hence modern techniques of traffic management contribute to optimization of traffic problem. The dynamic traffic signal controller is introduced in this project having specific functions along with hardware interface. The first part is designing of program which consists of data collection, sorting  and therefore automatic evaluation of signal time. After that the second part is optimizong algortihm which is designed to provide traffic alerts for road users and take measures to avoid delay. So problems such as wastage of fuel, emergency case could be overcome through this proposed system. This system aims at saving a large amount of waiting hours caused by traffic deadlocks, where control can save time and property.
 
 <br>
 ## Reference Papers:
