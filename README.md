@@ -1,4 +1,4 @@
-# Unfinished
+
 # Project Title - optimization of green signal timings of traffic light controllers using firefly algorithms
 <br>
 
@@ -28,7 +28,7 @@ The dynamic traffic signal controller is introduced in this project with efficie
 Nowadays, vehicles on road are increasing each day like growing cities of this world. Traffic Management on road has become the need of hour in today’s urban lifestyle. Efficient techniques are needed to reduce travel time, usage of money, fuel and waiting hours along with gamut of other problems too. Thus need arises for simulating and optimizing current system for the traffic controllers to better accommodate this increasing demand by road users around the world.Traffic lights are commonly used devices to regulate roadway intersection traffic with a view to both safety and smoothness of vehicle flow, for generations where it is still considered the best practices . Various methods and approaches are suggested in literature for solving the traffic control problem. It includes rule based learning to the modern fuzzy and neural network approaches. In this section, the various solutions to the traffic control problems suggested in the literature are discussed, along with their merits and demerits.
 
 Since the traffic light was invented ages ago, there have been significant revolutions lined down in various aspects about same. The most common revelation which we can visualize is the displays of traffic light itself. The other revolution which is being enhanced and improved is the traffic light controllers.
- 
+
  ## 3. Proposed Model
 The primary objective of this project is to design a user interface program and implement hardware for dynamic traffic light control system that is suitable for real life implementations. The project implementation also aims to have efficient and safe traffic flow control along with reduced waiting time at signal junction, priority for emergency case, heavy traffic jams and provision of information to road users instantly.The traffic jam will be reduced by increasing the green signal time on busy road and decreasing the red signal time on non busy road. Infra Red-Light Emitting Diode (IR-LED) transmittor and receivers are used to measure the traffic flow in real time (like no of cars, buses etc) their speed and their Density. This Data is very useful when It comes to firefly Algorithm to work because firefly algorithm works on the Parameter of brightness. Which in this case is the type of vehicle (biggger the vehicle greater the brightness and vice versa).
 And the distance between vehicles is Used as distance between the fireflies.
@@ -40,16 +40,16 @@ The Infrared Sensors mounted on road to detect above explained parameters. The p
     Begin
      1.Objective function: f ( x ) , x = ( x 1 , x 2 , . . . , x d ));
      2.Generate an initial population of fireflies x i ( i = 1 , 2 , … , n ) ;.
-     3.Formulate light intensity I so that it is associated with f ( x ) 
+     3.Formulate light intensity I so that it is associated with f ( x )
      4.Define absorption coefficient γ
 
     While (t < MaxGeneration)
         for i = 1 : n (all n fireflies)
             for j = 1 : i (n fireflies)
                 if ( I>J),
-                    Vary attractiveness with distance r via e**( -Yr)              
+                    Vary attractiveness with distance r via e**( -Yr)
                     Evaluate new solutions and update light intensity;
-                end if 
+                end if
             end for j
         end for i
         Rank fireflies and find the current best;
@@ -65,16 +65,14 @@ Firefly algorithm (FA) is a simple yet quite efficient nature-inspired search te
   - Attractiveness is proportional to its brightness, that is, the less bright one will move towards the brighter one;
   - If there are no brighter fireflies than a particular firefly, it will move randomly in the space.
 
-In FA, the distance between any teo fireflies x<sub>i</sub>,x<sub>j</subs>, respectively, can be defined as the Euclidean  Distance r<sub>ij</sub> whic is formulted as follows,<br>
+In FA, the distance between any teo fireflies x<sub>i</sub>,x<sub>j</sub>, respectively, can be defined as the Euclidean  Distance r<sub>ij</sub> whic is formulted as follows,<br>
 
 ![logo](https://github.com/shazx06/DataSets/blob/master/1.jpg) (1)<br>
 where _D_ is the dimension of an optimization problem.
 <br>
 Indeed, the larger the distance r<sub>ij</sub> is , the less the light fireflies can see from each other .Accordingly, it is necessary to define monotonically decreasing functions for the light intensity and attractiveness , respectively. they are presented in Eqs (2) and (3).<br>
 
-![logo2](https://github.com/shazx06/DataSets/blob/master/2.jpg)     
-
-(2)<br>
+![logo2](https://github.com/shazx06/DataSets/blob/master/2.jpg)   (2)<br>
 Where _I_<sub>o</sub> is initial light intensity, and _Y_ is the light absorption coefficient, which controls the decrease of light intensity. Accordingly, the attractiveness _B_ of a firefly is defined as shown in EQ (3)<br>
 ![image3](https://github.com/shazx06/DataSets/blob/master/3.jpg)   (3)<br>
 
@@ -92,7 +90,23 @@ the equation (4) and (5) show that the _ith_ firefly will move towards the _jth_
 
 
 
+**Global best** Fitness is the maximum of the Local Best Fitness and also here we store the value of maximum element as global best fitness index.
+**Global best Position** is nothing its just the corresponding value from current position at index equal to global best fitness index.
+<div style="text-align:center" markdown="1">
 
+![flowchart](https://github.com/shazx06/DataSets/blob/master/6.png)
+
+
+
+
+
+
+![graph](https://github.com/shazx06/DataSets/blob/master/Figure_2.png)
+Fireflies tend to move close to each other after every Generation and hence gives the optimized result.
+</div>
+
+
+<br>
 
 
 

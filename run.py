@@ -1,8 +1,10 @@
 from FireflyAlgorithm import *
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+
 df=np.random.randint(30,100,(10,3))
-df=pd.DataFrame(df,columns=['no_of_vehicle','avg_speed','avg_distance_btw_them'])
+df=pd.DataFrame(df,columns =['no_of_vehicle','avg_speed','avg_distance_btw_them'])
 df.to_csv('data.csv')
 df=df.values
 prob_dim=(len(df))
@@ -32,6 +34,8 @@ def function(D, sol):
 
 
 Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,60, 180, function,data_set)
+
 Best = Algorithm.Run()
+# Algorithm.plot(Algorithm.nbest,Algorithm.I)
 
 print ('best solution is ',Best[0],'and best fiteness ',Best[1])
