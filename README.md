@@ -102,6 +102,7 @@ the equation (4) and (5) show that the _ith_ firefly will move towards the _jth_
 
 
 ![graph](https://github.com/shazx06/DataSets/blob/master/Figure_2.png)
+<br>
 Fireflies tend to move close to each other after every Generation and hence gives the optimized result.
 </div>
 
