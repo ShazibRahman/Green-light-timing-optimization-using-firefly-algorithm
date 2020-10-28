@@ -35,6 +35,7 @@ And the distance between vehicles is Used as distance between the fireflies.
 The Infrared Sensors mounted on road to detect above explained parameters. The presence of a Vehicle is sensed and recorded as an imput for the firefly algorithm. The input signal indicates the densitty of vehicles on each road. In This type of system the basic operations are implemented by Alog.
 <br>
 
+<b>
 
 ```
     Begin
@@ -60,6 +61,7 @@ The Infrared Sensors mounted on road to detect above explained parameters. The p
  end
 ```
 
+</b>
 
 <br>
 
@@ -109,12 +111,23 @@ the equation (4) and (5) show that the _ith_ firefly will move towards the _jth_
 
 <br>
 
+
+
+
 Fireflies tend to move close to each other after every Generation and hence gives the optimized result.
+
+![lane](https://github.com/shazx06/DataSets/blob/master/lane.png)
+<br>
+The above Graph represents the optimized minutes of green light for a Traffic light 
+according to its density of vehicles, their speed and the distance in between them.
+
 
 
 **Fiteness function** used here is called sphere which is follows:
 
 <br>
+
+
 
 ```python
 def function(D, sol):
