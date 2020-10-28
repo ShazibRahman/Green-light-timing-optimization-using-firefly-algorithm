@@ -30,7 +30,7 @@ Nowadays, vehicles on road are increasing each day like growing cities of this w
 Since the traffic light was invented ages ago, there have been significant revolutions lined down in various aspects about same. The most common revelation which we can visualize is the displays of traffic light itself. The other revolution which is being enhanced and improved is the traffic light controllers.
 
  ## 3. Proposed Model
-The primary objective of this project is to design a user interface program and implement hardware for dynamic traffic light control system that is suitable for real life implementations. The project implementation also aims to have efficient and safe traffic flow control along with reduced waiting time at signal junction, priority for emergency case, heavy traffic jams and provision of information to road users instantly.The traffic jam will be reduced by increasing the green signal time on busy road and decreasing the red signal time on non busy road. Infra Red-Light Emitting Diode (IR-LED) transmittor and receivers are used to measure the traffic flow in real time (like no of cars, buses etc) their speed and their Density. This Data is very useful when It comes to firefly Algorithm to work because firefly algorithm works on the Parameter of brightness. Which in this case is the type of vehicle (biggger the vehicle greater the brightness and vice versa).
+The primary objective of this project is to design a  program and implement hardware for dynamic traffic light control system that is suitable for real life implementations. The project implementation also aims to have efficient and safe traffic flow control along with reduced waiting time at signal junction, priority for emergency case, heavy traffic jams and provision of information to road users instantly.The traffic jam will be reduced by increasing the green signal time on busy road and decreasing the red signal time on non busy road. Infra Red-Light Emitting Diode (IR-LED) transmittor and receivers are used to measure the traffic flow in real time (like no of cars, buses etc) their speed and their Density. This Data is very useful when It comes to firefly Algorithm to work because firefly algorithm works on the Parameter of brightness. Which in this case is the type of vehicle (biggger the vehicle greater the brightness and vice versa).
 And the distance between vehicles is Used as distance between the fireflies.
 The Infrared Sensors mounted on road to detect above explained parameters. The presence of a Vehicle is sensed and recorded as an imput for the firefly algorithm. The input signal indicates the densitty of vehicles on each road. In This type of system the basic operations are implemented by Alog.
 <br>
@@ -116,7 +116,7 @@ Fireflies tend to move close to each other after every Generation and hence give
 
 <br>
 
-```
+```python
 def function(D, sol):
     val = 0.0
     for i in range(D):
