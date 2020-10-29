@@ -2,7 +2,7 @@ import random
 import math
 import numpy as np
 
-import matplotlib.pyplot as plt
+
 
 
 class FireflyAlgorithm():
@@ -28,10 +28,7 @@ class FireflyAlgorithm():
         self.evaluations = 0
         self.Fun = function
         self.time_gain=0
-    def plot(self,x,y):
 
-        plt.scatter(x,y)
-        plt.show()
 
     def init_ffa(self):
         for i in range(self.NP):
@@ -105,8 +102,8 @@ class FireflyAlgorithm():
             self.FindLimits(i)
 
     def Run(self):
-        
-       
+
+
         self.init_ffa()
 
         while self.evaluations < self.nFES:

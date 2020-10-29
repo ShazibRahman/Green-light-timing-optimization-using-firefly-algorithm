@@ -36,7 +36,7 @@ def function(D, sol):
 Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,60, 180, function,data_set)
 
 Best = Algorithm.Run()
-# Algorithm.plot(Algorithm.nbest,Algorithm.I)
+
 
 print ('best solution is ',Best[0],'and best fiteness ',Best[1])
 # plt.bar([1,2,3,4,5,6,7,8,9,10],Algorithm.nbest)#2nd list is the traffic light no
