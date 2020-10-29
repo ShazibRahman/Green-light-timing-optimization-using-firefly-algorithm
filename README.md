@@ -1,10 +1,15 @@
-<center>
 
-Contributor   | commits
-:-------------: | :-------------:
-[Shazib Rahman](https://github.com/shazx06)                 | 38
-              
-</center>
+
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; __contibutors__
+
+
+
+
+|[Shazib Rahman   ](https://github.com/shazx06)|
+|:-------------:|
+|<img src="https://avatars0.githubusercontent.com/u/45175156?s=400&v=4" alt="drawing"  width="152"> |
+|commits __39__|
+
 
 # Project Title - optimization of green signal timings of traffic light controllers using firefly algorithms
 <br>
