@@ -8,7 +8,7 @@ df=pd.DataFrame(df,columns =['no_of_vehicle','avg_speed','avg_distance_btw_them'
 df.to_csv('data.csv')
 df=df.values
 prob_dim=(len(df))
-pop_size=10
+pop_size=3000
 data_set=[[0 for x in range(prob_dim)] for x in range(pop_size)]
 
 def generate(df):
@@ -33,14 +33,14 @@ def function(D, sol):
 
 
 
-Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,60, 180, function,data_set)
+Algorithm = FireflyAlgorithm(10, 10, 100, 0.5, 0.2,0.9,30, 180, function,data_set)
 
 Best = Algorithm.Run()
 
 
 print ('best solution is ',Best[0],'and best fiteness ',Best[1])
-# plt.bar([1,2,3,4,5,6,7,8,9,10],Algorithm.nbest)#2nd list is the traffic light no
-# plt.title("Graph of traffic light No and their allocated timing in minutes")
-# plt.xlabel('Traffic light no')
-# plt.ylabel('allocated time')
-# plt.show()
+plt.bar([1,2,3,4,5,6,7,8,9,10],Algorithm.nbest)#2nd list is the traffic light no
+plt.title("Graph of traffic light No and their allocated timing in minutes")
+plt.xlabel('Traffic light no')
+plt.ylabel('allocated time')
+plt.show()
