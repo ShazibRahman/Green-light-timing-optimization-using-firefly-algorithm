@@ -116,7 +116,7 @@ the equation (4) and (5) show that the _ith_ firefly will move towards the _jth_
 
 Fireflies tend to move close to each other after every Generation and hence gives the optimized result.
 
-![lane](https://github.com/shazx06/DataSets/blob/master/lane.png)
+![lane](https://github.com/shazx06/DataSets/blob/master/lane2.png)
 <br>
 The above Graph represents the optimized minutes of green light for a Traffic light 
 according to its density of vehicles, their speed and the distance in between them.

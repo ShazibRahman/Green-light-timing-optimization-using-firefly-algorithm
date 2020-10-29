@@ -39,6 +39,7 @@ Best = Algorithm.Run()
 
 
 print ('best solution is ',Best[0],'and best fiteness ',Best[1])
+plt.figure(figsize=(150,120))
 plt.bar([x+1 for x in range(prob_dim)],Algorithm.nbest)#2nd list is the traffic light no
 plt.title("Graph of traffic light No and their allocated timing in minutes")
 plt.xlabel('Traffic light no')

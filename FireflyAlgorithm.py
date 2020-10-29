@@ -93,7 +93,7 @@ class FireflyAlgorithm():
                 if self.I[i] > self.I[j]:  # brighter and more attractive
                     beta0 = 1.0
                     beta = (beta0 - self.betamin) * \
-                        math.exp(-self.gamma * math.pow(r, 2.0)) + self.betamin
+                        math.exp(-self.gamma * math.pow(r, 2.0)) + self.betamin # b=b0* e^(-yr^2)
                     for k in range(self.D):
                         r = random.uniform(0, 1)
                         tmpf = self.alpha * (r - 0.5) * scale
