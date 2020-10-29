@@ -62,9 +62,8 @@ class FireflyAlgorithm():
                     self.Index[j] = z
 
 
-
     def replace_ffa(self):  # replace the old population according to the new Index values
-        # copy original population to a temporary area
+        # copy original population to a temporary area so that when we chnage data of current firefly Array the old value preserved to calculate the delta for other fireflies
         for i in range(self.NP):
             for j in range(self.D):
                 self.Fireflies_tmp[i][j] = self.Fireflies[i][j]
