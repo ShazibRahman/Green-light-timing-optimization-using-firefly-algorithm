@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df=np.random.randint(30,100,(10,3))
+df=np.random.randint(30,100,(30,3))
 df=pd.DataFrame(df,columns =['no_of_vehicle','avg_speed','avg_distance_btw_them'])
 df.to_csv('data.csv')
 df=df.values
@@ -39,7 +39,7 @@ Best = Algorithm.Run()
 
 
 print ('best solution is ',Best[0],'and best fiteness ',Best[1])
-plt.bar([1,2,3,4,5,6,7,8,9,10],Algorithm.nbest)#2nd list is the traffic light no
+plt.bar([x+1 for x in range(prob_dim)],Algorithm.nbest)#2nd list is the traffic light no
 plt.title("Graph of traffic light No and their allocated timing in minutes")
 plt.xlabel('Traffic light no')
 plt.ylabel('allocated time')

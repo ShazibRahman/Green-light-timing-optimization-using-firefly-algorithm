@@ -34,7 +34,7 @@ class FireflyAlgorithm():
         for i in range(self.NP):
             for j in range(self.D):
                 self.Fireflies[i][j] = random.uniform(
-                    20, 50) +self.Fireflies[i][j] # adding noise of 20-30 for better movement and hence better Solution
+                    20, 30) +self.Fireflies[i][j] # adding noise of 20-30 for better movement and hence better Solution
             self.Fitness[i]=random.uniform(30,60)
 
             self.I[i] = self.Fitness[i]
